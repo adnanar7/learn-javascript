@@ -9,7 +9,7 @@ function increment() {
 
 function save() {
     let countStr = count + " - "
-    saveEl.textContent += countStr
+    saveEl.textContent += countStr  // using the textContent instead of innerText because it do not show the space at the end in " - "
 }
 
 // Google:
