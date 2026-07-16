@@ -6,6 +6,8 @@ const ulEl = document.getElementById("ul-el")
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     // Clear out the input field
+    inputEl.value = ""
+    inputEl.focus()
     renderLeads()
 })
 

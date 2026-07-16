@@ -8,6 +8,8 @@ inputBtn.addEventListener("click", function() {
     inputEl.value = ""
     // Save the myLeads array to localStorage 
     // PS: remember JSON.stringify()
+    myLeads1 = JSON.stringify(myLeads)
+    localStorage.setItem("myLeads", myLeads1)
     renderLeads()
     
     // To verify that it works:

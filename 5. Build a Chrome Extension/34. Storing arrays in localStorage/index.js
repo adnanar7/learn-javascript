@@ -1,4 +1,13 @@
-let myLeads = ["www.awesomelead.com"]
+let myLeads = '["www.awesomelead.com"]'
+// 1. Turn myLead String into an array
+// 2. Push a new value to an array 
+// 3. Turn the array into a string agian
+// 4. Console.log the string using typeofto verify that it's a string
+
+myLeads = JSON.parse(myLeads)
+myLeads.push("adnan.com")
+myLeads = JSON.stringify(myLeads)
+console.log(typeof myLeads)
 
 
 
