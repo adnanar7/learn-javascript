@@ -7,3 +7,11 @@ const imgs = [
     "images/hip2.jpg",
     "images/hip3.jpg"
 ]
+
+const containerEl = document.getElementById("container");
+let images = ""
+for(let i = 0; i < imgs.length; i++){
+    images += `<img class="team-img" src="${imgs[i]}" ></img>`;
+}
+
+containerEl.innerHTML = images
